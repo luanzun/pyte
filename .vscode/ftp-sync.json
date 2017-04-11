@@ -1,16 +1,4 @@
 {
-    "remotePath": "/www.pyte.vip",
-    "host": "45.78.30.253",
-    "username": "luanzun",
-    "password": "luanzun",
-    "port": 21,
-    "secure": false,
-    "protocol": "ftp",
-    "uploadOnSave": false,
-    "passive": false,
-    "debug": false,
-    "privateKeyPath": null,
-    "passphrase": null,
     "ignore": [
         "\\.vscode",
         "\\.git",
