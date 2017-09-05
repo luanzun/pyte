@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<h1>欢迎来到8：{{title}}</h1>
+<div id="app" class="material quizView">
+    <div id="quizView" class="view elevated">
+        {% for post in posts %}
+        <div class="quizContent">
+            <div class="quizQuestion">
+                <p class="question">{{post.exam}}<br> {{post.content|safe}}</p>
+            </div>
+            <div id="quizSelector">
+                <div class="answers multipleChoiceQuiz">
+                    {% for option in options %} {% if option.examid == post.examid %}
+                    <div class="answer materialRadio">
+                        <div class="icon">
+                            <div class="outline"></div>
+                            <div class="fill"></div>
+                        </div>
+                        <span data-bind="text:text">{{option.content}}</span>
+                    </div>
+                    {%- endif %} {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

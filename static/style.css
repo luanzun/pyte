@@ -1,0 +1,207 @@
+body {
+    position: relative;
+    font-size: 10px;
+    background-color: #f2f2f2;
+    font-family: GothamRounded;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: none;
+    -webkit-tap-highlight-color: transparent;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+}
+.courseModule {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.courseModule p {
+    font-weight: bold;
+    color: #3a464b;
+    font-size: 1.5em;
+}
+.courseLesson {
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #f0f0f0;
+}
+.courseLesson a {
+    color: inherit;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.courseLessons {
+    margin-top: 20px;
+    max-width:800px;
+    margin:auto;
+}
+.courseLessonTitle {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.lessonChecks {
+    margin-left: 10px;
+    width: 60px;
+}
+.lessonChecks p, .lessonVideo p {
+    font-size: 1.4em;
+    margin: 0 5px;
+    padding: 5px;
+}
+.lessonLeft {
+    float: left;
+    overflow: hidden;
+}
+.lessonRight {
+    float: right;
+    overflow: hidden;
+}
+.lessonNumber, .courseLessonTitle {font-weight: 500;font-size: 1.4em;line-height: 26px;}
+.lessonNumber {
+    padding-right: 10px;
+    border-right: 1px solid #f0f0f0;
+}
+.lessonNumber, .courseLessonTitle {
+    float: left;
+    overflow: hidden;
+}
+
+.lessonVideo, .lessonChecks {
+    float: left;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.lessonVideo .videoIcon, .lessonChecks .quizIcon {
+    margin-top: 2px;
+}
+.lessonVideo p, .lessonVideo div, .lessonChecks p, .lessonChecks div {
+    float: left;
+    overflow: hidden;
+    margin-left: 5px;
+}
+.materialRadio .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0f9d58;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: -webkit-transform ease .28s;
+    transition: transform ease .28s;
+}
+.materialRadio .icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+}
+.materialRadio .outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: #5a5a5a;
+}
+.materialRadio.selected .fill {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.multipleChoiceQuiz .answer, .strikeOutQuiz .answer {
+    border-top: solid 1px #eee;
+    border-radius: 3px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    transition: box-shadow ease-in 100ms;
+    cursor: pointer;
+}
+.multipleChoiceQuiz, .strikeOutQuiz {
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    border-radius: 3px;
+    background: #fff;
+    text-align: left;
+}
+.nav {
+    font-size:16px;
+    line-height:48px;
+    padding-left:20px;
+    height:48px;
+}
+.nav a {
+    margin:auto 5px;
+}
+.quizIcon {
+    float: left;
+    vertical-align: middle;
+    background: url(/static/images/sprite.png) no-repeat;
+    width: 20px;
+    height: 25px;
+    background-position: -38px -439px;
+}
+.view {
+    /*margin: 100px auto 0;*/
+    position: relative;
+    display: block;
+    /*z-index: 103;*/
+    opacity: 1;
+    transform: scaleX(1) scaleY(1) translateX(0px);
+}
+#app {
+    background: #e9e9e9;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    /*font-family: roboto;*/
+    font-size: 16px;
+    max-width:640px;
+}
+#quizSelector {
+    padding: 0 40px;
+    text-align: center;
+}
+#quizView {
+    display: block;
+    z-index: 103;
+    opacity: 1;
+    transform: scaleX(1) scaleY(1) translateX(0px);
+}
+#quizView .quizContent {
+    min-height: 420px;
+}
+#quizView .quizQuestion .question {
+    white-space: pre-wrap;
+}
+#quizView .quizQuestion {
+    padding: 40px;
+    font-size: 20px;
+    color: #444;
+}
+#quizSelector {
+    padding: 0 40px;
+    text-align: center;
+}
+#quizSelector .materialRadio .icon {
+    float: left;
+    width: 36px;
+}

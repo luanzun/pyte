@@ -1,14 +1,24 @@
 <html>
-  <head>
-    {% if title %}
-    <title>{{title}} - Pyte</title>
-    {% else %}
-    <title>Pyte</title>
-    {% endif %}
-  </head>
-  <body>
-    <div>Pyte: <a href="/index">回到首页</a></div>
-    <hr>
-    {% block content %}{% endblock %}
-  </body>
+
+<head>
+  {% if title %}
+  <title>{{title}} - Pyte</title>
+  {% else %}
+  <title>Pyte</title>
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link href="/static/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav">Pyte: <a href="/">首页</a> <a href="/sololearn/">Python课程</a> <a href="/editor/">自媒体专用编辑器</a></div>
+  <hr> {% with messages = get_flashed_messages() %} {% if messages %}
+  <ul>
+    {% for message in messages %}
+    <li>{{ message }} </li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% endwith %} {% block content %}{% endblock %}
+</body>
+
 </html>

@@ -1,0 +1,30 @@
+<!-- 继承 base 的设置布局 extend from base layout -->
+{% extends "base.html" %}
+{% block content %}
+<h1>欢迎来到：{{coursetitle}}</h1>
+<div class="courseLessons block">
+    {% for module in modules %}
+        <div class="courseModule">
+            <p><span>Module {{module.moduleid}}:</span> {{module.name}}</p>
+        </div>
+        {% for post in posts %}
+        {% if post.moduleid == module.moduleid %}
+        <div class="courseLesson">
+            <a href="{{post.lessonurl}}">
+                <div class="lessonLeft">
+                    <span class="lessonNumber"> {{post.lessonnumber}} </span>
+                    <span class="courseLessonTitle">{{post.lessontitle}}</span>
+                </div>
+                <div class="lessonRight">
+                    <div class="lessonChecks">
+                        <div class="quizIcon"></div>
+                        <p>{{post.quizzes}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    {% endfor %}
+<div>
+{% endblock %}
