@@ -1,8 +1,8 @@
 {
-    "remotePath": "/www.pyte.vip",
-    "host": "45.78.30.253",
+    "remotePath": "/1ico.com",
+    "host": "115.159.226.210",
     "username": "luanzun",
-    "password": "luanzun",
+    "password": "pytevip",
     "port": 21,
     "secure": false,
     "protocol": "ftp",
@@ -15,5 +15,10 @@
         "\\.vscode",
         "\\.git",
         "\\.DS_Store"
-    ]
+    ],
+    "generatedFiles": {
+        "uploadOnSave": false,
+        "extensionsToInclude": [],
+        "path": ""
+    }
 }
