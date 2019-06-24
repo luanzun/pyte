@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+
+<dict>
+
+    <key>items</key>
+
+    <array>
+
+        <dict>
+
+            <key>assets</key>
+
+            <array>
+
+                <dict>
+
+                    <key>kind</key>
+
+                    <string>software-package</string>
+
+                    <key>url</key>
+
+                    <string>http://61.136.221.51:8800/download/421000000000/ios/11723407_iphone_01.00.0085_000_68430_0.ipa</string>
+
+                </dict>
+
+            </array>
+
+            <key>metadata</key>
+
+            <dict>
+
+                <key>bundle-identifier</key>
+
+                <string>com.app.jzapp</string>
+
+                <key>bundle-version</key>
+
+                <string>01.00.0085</string>
+
+                <key>kind</key>
+
+                <string>software</string>
+
+                <key>title</key>
+
+                <string>??e?</string>
+
+            </dict>
+
+        </dict>
+
+    </array>
+
+</dict>
+
+</plist>
